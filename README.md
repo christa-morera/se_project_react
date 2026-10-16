@@ -1,5 +1,7 @@
 # WTWR (What to Wear?)
 
+**[View the live site](https://christa-morera.github.io/se_project_react/)**
+
 ## About the project
 
 WTWR is a React app that checks the current weather and suggests clothing for it. It gets live weather data for a set location from the OpenWeather API, sorts the temperature into **hot**, **warm**, or **cold**, and shows only the clothing items that suit that range.

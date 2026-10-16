@@ -94,6 +94,7 @@ function App() {
             id="name"
             className="modal__input"
             placeholder="Name"
+            required
           />
         </label>
         <label htmlFor="imageUrl" className="modal__label">
