@@ -1,0 +1,15 @@
+.footer {
+  padding: 171px 0 24px;
+  display: flex;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.footer__author {
+  margin: 0;
+}
+
+.footer__date {
+  margin: 0 0 0 auto;
+}

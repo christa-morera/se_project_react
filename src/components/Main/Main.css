@@ -1,0 +1,31 @@
+.cards__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 21px;
+}
+
+.cards__text {
+  margin-top: 40px;
+  margin-bottom: 34px;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 700;
+}
+
+.card__img {
+  border-radius: 19px;
+  border: 1px solid #0000004d;
+}
+
+.card__name {
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #00000099;
+  padding: 2px 12px;
+}

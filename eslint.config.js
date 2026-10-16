@@ -36,11 +36,11 @@ export default [
 
       "react/prop-types": 0,
     },
-
-    overrides: [
-      {
-        files: ["*.js", "*.jsx"],
-      },
-    ],
+    // eslint stops working if I add this
+    // overrides: [
+    //   {
+    //     files: ["*.js", "*.jsx"],
+    //   },
+    // ],
   },
 ];
