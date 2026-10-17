@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import {
   coordinates,
-  APIkey,
+  apiKey,
   defaultClothingItems,
 } from "../../utils/constants";
 import Header from "../Header/Header";
@@ -62,7 +62,7 @@ function App() {
   }, [activeModal]);
 
   useEffect(() => {
-    getWeather(coordinates, APIkey)
+    getWeather(coordinates, apiKey)
       .then((data) => {
         const filteredData = filterWeatherData(data);
         setWeatherData(filteredData);
@@ -84,7 +84,8 @@ function App() {
       <ModalWithForm
         title="New garment"
         buttonText="Add garment"
-        activeModal={activeModal}
+        name="add-garment"
+        isOpen={activeModal === "add-garment"}
         onClose={handleCloseModal}
       >
         <label htmlFor="name" className="modal__label">
@@ -104,6 +105,7 @@ function App() {
             id="imageUrl"
             className="modal__input"
             placeholder="Image URL"
+            required
           />
         </label>
         <fieldset className="modal__radio-buttons">
@@ -113,6 +115,7 @@ function App() {
               id="hot"
               type="radio"
               name="weather"
+              value="hot"
               className="modal__radio-input"
             ></input>
             Hot
@@ -125,6 +128,7 @@ function App() {
               id="warm"
               type="radio"
               name="weather"
+              value="warm"
               className="modal__radio-input"
             ></input>
             Warm
@@ -137,6 +141,7 @@ function App() {
               id="cold"
               type="radio"
               name="weather"
+              value="cold"
               className="modal__radio-input"
             ></input>
             Cold
@@ -144,9 +149,9 @@ function App() {
         </fieldset>
       </ModalWithForm>
       <ItemModal
-        activeModal={activeModal}
         card={selectedCard}
         onClose={handleCloseModal}
+        isOpen={activeModal === "preview"}
       />
     </div>
   );
