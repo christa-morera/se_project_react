@@ -53,12 +53,10 @@ function App() {
       imageUrl: inputValues.imageUrl,
       weather: inputValues.weatherType,
     };
-    addItem(newItem)
-      .then((data) => {
-        setClothingItems([data, ...clothingItems]);
-        handleCloseModal();
-      })
-      .catch(console.error);
+    return addItem(newItem).then((data) => {
+      setClothingItems([data, ...clothingItems]);
+      handleCloseModal();
+    });
   };
 
   const handleCardDelete = (card) => {
