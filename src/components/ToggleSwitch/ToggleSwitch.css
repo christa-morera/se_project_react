@@ -1,0 +1,51 @@
+/* add maring left auto */
+
+.toggle-switch {
+  width: 56px;
+  height: 28px;
+  margin-left: auto;
+  border: 2px solid #7e7e7e;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  font-size: 14px;
+}
+
+.toggle-switch__checkbox {
+  opacity: 0;
+}
+
+.toggle-switch__circle {
+  background-color: #000000;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  border-radius: 50%;
+  left: 0px;
+  transition: all 0.3s;
+}
+
+.toggle-switch__text {
+  position: absolute;
+  top: 3px;
+  color: #000000;
+  opacity: 50%;
+}
+
+.toggle-switch__text_F {
+  left: 8px;
+}
+
+.toggle-switch__text_C {
+  right: 8px;
+}
+
+.toggle-switch__checkbox:checked ~ .toggle-switch__circle {
+  left: 28px;
+}
+
+.toggle-switch__text_color_white {
+  color: #ffffff;
+  opacity: 100%;
+}

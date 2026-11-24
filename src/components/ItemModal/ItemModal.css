@@ -1,19 +1,26 @@
-.modal__content_type_image {
+.modal__content.modal__content_type_image {
   padding: 0;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
 }
 
 .modal__footer {
-  padding-left: 32px;
-  padding-bottom: 32px;
+  padding: 0 32px 32px 32px;
   font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
 }
 
 .modal__image {
   display: block;
   width: 100%;
-  object-fit: contain;
-  max-height: 498px;
+  height: 498px;
+  flex: 1 1 auto;
+  min-height: 0;
+  object-fit: cover;
 }
 
 .modal__caption {
@@ -26,4 +33,16 @@
   margin: 0;
   font-size: 20px;
   line-height: 24px;
+}
+
+.modal__footer-item-info {
+  flex-direction: column;
+}
+
+.modal__delete-item-btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #ff4d00;
+  font-size: 20px;
 }

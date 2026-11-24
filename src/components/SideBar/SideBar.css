@@ -1,0 +1,28 @@
+.sidebar {
+  flex-shrink: 0;
+}
+
+.sidebar__profile {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  min-width: 0;
+}
+
+.sidebar__avatar {
+  width: 56px;
+  height: 56px;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sidebar__user-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

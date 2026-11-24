@@ -10,7 +10,7 @@ function ItemCard({ item, onCardClick }) {
       <img
         onClick={handleClick}
         className="card__img"
-        src={item.link}
+        src={item.imageUrl}
         alt={item.name}
       ></img>
     </li>

@@ -1,0 +1,31 @@
+.clothes-section-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.clothes-section-menu-title {
+  margin: 0;
+}
+
+.clothes-section-menu-btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: #00000099;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 20px;
+}
+
+.clothes-section-cards {
+  margin-top: 16px;
+}
+
+.clothes-section-cards-items {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 21px;
+}

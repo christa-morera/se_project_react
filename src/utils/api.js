@@ -1,0 +1,25 @@
+import { processServerResponse } from "./weatherApi";
+
+const baseUrl = "http://localhost:3001";
+const headers = {
+  "Content-Type": "application/json",
+};
+
+export const getClothingItems = () => {
+  return fetch(`${baseUrl}/items`, { headers }).then(processServerResponse);
+};
+
+export const addItem = ({ name, imageUrl, weather }) => {
+  return fetch(`${baseUrl}/items`, {
+    method: "POST",
+    headers,
+    body: JSON.stringify({ name, imageUrl, weather }),
+  }).then(processServerResponse);
+};
+
+export const removeItem = (itemID) => {
+  return fetch(`${baseUrl}/items/${itemID}`, {
+    method: "DELETE",
+    headers,
+  }).then(processServerResponse);
+};

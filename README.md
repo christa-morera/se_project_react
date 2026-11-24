@@ -2,6 +2,11 @@
 
 **[View the live site](https://christa-morera.github.io/se_project_react/)**
 
+## Project Pitch Video
+
+Check out [this video](https://drive.google.com/file/d/14M5E1rylxcBoQR-V9hETLtwEMxg0Mu58/view?usp=sharing), where I describe my
+project and some challenges I faced while building it.
+
 ## About the project
 
 WTWR is a React app that checks the current weather and suggests clothing for it. It gets live weather data for a set location from the OpenWeather API, sorts the temperature into **hot**, **warm**, or **cold**, and shows only the clothing items that suit that range.
